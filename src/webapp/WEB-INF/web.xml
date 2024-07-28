@@ -1,0 +1,56 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!-- Servlets -->
+    <servlet>
+        <servlet-name>PacienteServlet</servlet-name>
+        <servlet-class>main.java.servlet.PacienteServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DoctorServlet</servlet-name>
+        <servlet-class>main.java.servlet.DoctorServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CitaMedicaServlet</servlet-name>
+        <servlet-class>main.java.servlet.CitaMedicaServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>HistorialMedicoServlet</servlet-name>
+        <servlet-class>main.java.servlet.HistorialMedicoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdministradorServlet</servlet-name>
+        <servlet-class>main.java.servlet.AdministradorServlet</servlet-class>
+    </servlet>
+
+    <!-- Servlet Mappings -->
+    <servlet-mapping>
+        <servlet-name>PacienteServlet</servlet-name>
+        <url-pattern>/paciente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DoctorServlet</servlet-name>
+        <url-pattern>/doctor</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CitaMedicaServlet</servlet-name>
+        <url-pattern>/citaMedica</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>HistorialMedicoServlet</servlet-name>
+        <url-pattern>/historialMedico</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdministradorServlet</servlet-name>
+        <url-pattern>/administrador</url-pattern>
+    </servlet-mapping>
+
+    <!-- Welcome File List -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>
